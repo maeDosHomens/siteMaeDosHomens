@@ -1,0 +1,64 @@
+@import url(reset.css);
+@import url(style.css);
+@import url(transparencia.css);
+/*Estilização Como Ajudar*/
+
+.ajuda {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    gap: 32px;
+    padding: 24px 0;
+}
+
+.ajuda__container {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ajuda__container__imagem {
+    width: 10rem;
+}
+
+.ajuda__container__texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+}
+
+.ajuda__container__titulo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.ajuda__container__descricao {
+    font-weight: 500;
+}
+
+.pix {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+@media screen and (max-width:768px) {
+    .ajuda {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ajuda__container {
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    .pix__imagem {
+        width: 95vw;
+    }
+}

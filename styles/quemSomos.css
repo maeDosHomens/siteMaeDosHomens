@@ -1,0 +1,218 @@
+@import url(reset.css);
+@import url(style.css);
+
+/*Estilização Quem Somos*/
+
+/*Estilização Poema*/
+
+.poema {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    background-image: url(../assets/nuvem.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.poema__container {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.poema__container__estrofe {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.poema__container__autor {
+    align-self: flex-end;
+}
+
+/*Estilização Surgimento*/
+
+.surgimento {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    background-color: var(--cor-fundo);
+}
+
+.surgimento__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 60vw;
+}
+
+.surgimento__container__texto {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*Estilização MVV*/
+
+.MVV {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.MVV__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    text-align: center;
+    width: 55vw;
+    grid-template-areas: 
+    "imagem";
+    gap: 40px;
+}
+
+.MVV__container__imagem {
+    width: 30rem;
+}
+
+.MVV__container__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.MVV_container__texto__titulo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.diferente {
+    grid-area: imagem;
+}
+
+/*Estilização Frase*/
+
+.frase {
+    padding: 24px 0;
+    background-color: var(--cor-fundo);
+}
+.frase__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.frase__container__texto {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.frase__container__autor {
+    font-style: italic;
+}
+
+/*Estilização Equipe*/
+
+.equipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.equipe__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.equipe__texto__titulo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.equipe__texto__descricao {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.equipe__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.equipe__container__pessoa {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
+
+.equipe__container__pessoa__imagem {
+    width: 16rem;
+}
+
+/*Estilização trabalhe conosco*/
+
+.trabalheConosco {
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.trabalheConosco__titulo {
+    font-size: 20px;
+    font-weight: 700
+}
+
+@media screen and (max-width:768px) {
+    .poema__container {
+        width: 60vw;
+    }
+
+    .MVV__container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+        width: 85vw;
+    }
+
+    .MVV__container__imagem {
+        width: 95vw;
+    }
+
+    .frase {
+        display: flex;
+        justify-content: center;
+    }
+
+    .frase__container {
+        width: 70vw;
+        justify-content: center;
+    }
+
+    .equipe__container {
+        flex-direction: column;
+    }
+
+    .equipe__texto__descricao {
+        font-size: 16px;
+    }
+
+
+}
